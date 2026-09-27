@@ -1,0 +1,42 @@
+{
+  "solution": "selective-calendar-arima-chronos-catboost",
+  "version": "1.0.0",
+  "random_seed": 42,
+  "calendar_lightgbm": {
+    "objective": "regression_l1",
+    "n_estimators": 536,
+    "learning_rate": 0.03,
+    "num_leaves": 63,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "arima": {
+    "order": [1, 1, 1],
+    "seasonal_order": [1, 0, 1, 7],
+    "ensemble_weight": 0.30
+  },
+  "chronos": {
+    "model_id": "amazon/chronos-2",
+    "package_version": "2.3.2",
+    "quantile": 0.7,
+    "context_length": 512,
+    "cross_learning": true,
+    "ensemble_weight": 0.20
+  },
+  "selective_catboost": {
+    "route_weights": {
+      "11": 0.35,
+      "12": 0.10,
+      "25": 0.35,
+      "28": 0.45
+    },
+    "other_routes_weight": 0.0,
+    "hyperparameters_embedded_in": "final.py"
+  },
+  "route_5": {
+    "nov_dec_2025_total": 85000,
+    "first_week_total": 40000,
+    "forecast_2026_daily_scenario": 5200,
+    "status": "external scenario because route 5 has no usable observations in training"
+  }
+}

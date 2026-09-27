@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "runs": [
+    {
+      "year": 2025,
+      "elapsed_seconds": 66.256,
+      "rows": 14640,
+      "rows_per_second": 221.0,
+      "peak_rss_mib": 1831.5,
+      "date_min": "2025-11-01",
+      "date_max": "2025-12-31",
+      "prediction_sum": 12291065
+    },
+    {
+      "year": 2026,
+      "elapsed_seconds": 54.071,
+      "rows": 87600,
+      "rows_per_second": 1620.1,
+      "peak_rss_mib": 1971.2,
+      "date_min": "2026-01-01",
+      "date_max": "2026-12-31",
+      "prediction_sum": 75913403
+    }
+  ]
+}
