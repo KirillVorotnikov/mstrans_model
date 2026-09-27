@@ -2,6 +2,7 @@
 
 ```bash
 python final.py
+```
 
 # Артефакты
 
